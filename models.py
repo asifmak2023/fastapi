@@ -1,9 +1,10 @@
 from typing import Optional
 from pydantic import BaseModel
 
-class ItemPlayLoad(BaseModel):
-    item_id: optional[int]
+class ItemPayload(BaseModel):
+    item_id: Optional[int]
     item_name: str
-    quantity:int
+    quantity: int
+
     
 
